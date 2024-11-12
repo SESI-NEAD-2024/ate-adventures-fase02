@@ -2,7 +2,7 @@
 dist
 
 # Desconsiderar src/GDevelop
-src/GDevelop
+# src/GDevelop
 
 # Desconsiderar dependências
 node_modules
