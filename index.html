@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A educação tecnológica na Educação Básica"
+    />
+    <meta name="author" content="SESI EAD" />
+    <title>FASE 2 | ATE Adventures</title>
+    <link rel="icon" type="image/png" href="src/img/core/Favicon.webp" />
+
+    <!-- Font -->
+    <link rel="stylesheet" href="https://use.typekit.net/hgj6bzh.css" />
+
+    <!-- CSS -->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="src/css/main.css"
+      media="screen"
+    />
+
+    <!-- Vue DEV MODE -->
+    <!-- <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> -->
+
+    <!-- Vue PROD MODE -->
+    <script
+      rel="preconnect"
+      src="https://unpkg.com/vue@3/dist/vue.global.prod.js"
+    ></script>
+
+    <!-- Vue Router -->
+    <!-- <script src="https://unpkg.com/vue-router@4.2.0/dist/vue-router.global.js"></script> -->
+
+    <!-- Scorm JS -->
+    <script src="src/js/scorm/APIWrapper.js" ></script>
+    <script src="src/js/scorm/SCOFunctions.js" ></script>
+    <script src="src/js/scorm/scorm-app.js" ></script>
+
+    <!-- Materialize JS -->
+    <script
+      type="text/javascript"
+      src="src/js/materialize/materialize.js"
+      defer
+    ></script>
+
+    <!-- AOS JS -->
+    <script
+      type="text/javascript"
+      src="src/js/aos-master/aos.js"
+      defer
+    ></script>
+
+    <!-- HystModal Modal JS-->
+    <link rel="stylesheet" href="src/css/hystmodal.min.css" />
+    <script src="src/js/hystmodal/hystmodal.min.js"></script>
+
+    <!-- YouTube IFrame Player API -->
+    <script src="https://www.youtube.com/iframe_api"></script>
+
+    <!--**************** App.js JS customizado aqui ****************-->
+    <script type="module" src="src/js/app.js"></script>
+
+    <!-- AOS Animation CSS-->
+    <link type="text/css" rel="stylesheet" href="src/css/aos.css" />
+    <!-- HystModal Modal CSS-->
+    <link rel="stylesheet" href="src/css/hystmodal.min.css" />
+  </head>
+  <body>
+    <div id="app">
+      <!-- loading ---------------------------------- -->
+      <div id="loading">
+        <div class="spinner"></div>
+      </div>
+      <div id="content">
+        <!-- Navbar ---------------------------------- -->
+        <navbar></navbar>
+
+        <!-- Hero Banner ---------------------------------- -->
+        <hero>
+          <div>
+            <h2>FASE 2</h2>
+            <br />
+            <div
+              class="mb-60"
+              style="max-width: 750px; margin-left: auto; margin-right: auto"
+            >
+              <span class="display1" style="text-transform: uppercase"
+                >A educação tecnológica na Educação Básica</span
+              >
+            </div>
+            
+          </div>
+          <div class="container--medium">
+            <div class="box-attention box-attention--image my-80">
+              <div data-aos="fade-right" class="box-icon mr-24">
+                <img src="./src/img/star.gif" alt="Star" loading="lazy" />
+              </div>
+              <h5 class="left-align">
+                Nesta fase, você vai aprender sobre a educação tecnológica e
+                como ela se consolidou na Educação Básica. Além disso, vai
+                entender como a BNCC da Computação visa promover o
+                desenvolvimento das competências digitais e computacionais na
+                Educação Básica.
+              </h5>
+            </div>
+          </div>
+          ​</hero
+        >
+
+        <!-- EDUCACAO ---------------------------------- -->
+        <div id="educacao" class="pb-80">
+          
+
+          <div class="container mt-80">
+            <carousel></carousel>
+
+            <div class="row mt-80">
+              <div class="col m4 s12 center-align">
+                <img
+                  style="width: 100%; max-width: 250px"
+                  src="./src/img/bncc-float.png"
+                  alt="A BASE NACIONAL COMUM CURRICULAR (BNCC)"
+                  loading="lazy"
+                  class="center-align floatKeyf mb-40"
+                />
+                <img
+                  style="width: 100%; max-width: 320px"
+                  src="./src/img/base-bncc.webp"
+                  alt="A BASE NACIONAL COMUM CURRICULAR (BNCC)"
+                  loading="lazy"
+                  class="center-align"
+                />
+              </div>
+              <div class="col m8 s12 flex--align-center">
+                <div>
+                  <h1 data-aos="fade-up">
+                    A BASE NACIONAL COMUM CURRICULAR (BNCC)
+                  </h1>
+                  <p class="white-text">
+                    A Base Nacional Comum Curricular (BNCC) reflete o movimento
+                    de transformação digital. Ela é composta por dez
+                    competências gerais relacionadas aos direitos de
+                    aprendizagem e desenvolvimento. No contexto da educação
+                    tecnológica, a quinta competência se destaca por tratar da
+                    cultura digital. Espera-se que os estudantes de todos os
+                    níveis da Educação Básica sejam capazes de:
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- FRASE ------------------------------------>
+
+        <div id="frase">
+          <img
+            style="width: 100%"
+            src="./src/img/section.webp"
+            alt="divisor"
+            loading="lazy"
+            class="custom-divider"
+          />
+          <div class="bg py-80">
+            <div class="container--medium center-align">
+              <img
+                data-aos="fade-down"
+                src="src/img/plus.png"
+                alt="+"
+                loading="lazy"
+                style="width: 100%; max-width: 60px"
+                class="mb-24"
+              />
+              <h3 class="white-text">
+                “Compreender, utilizar e criar tecnologias digitais de
+                informação e comunicação de forma crítica, significativa,
+                reflexiva e ética nas diversas práticas sociais (incluindo as
+                escolares) para se comunicar, acessar e disseminar informações,
+                produzir conhecimentos, resolver problemas e exercer
+                protagonismo e autoria na vida pessoal e coletiva”
+              </h3>
+              <p class="white-text">
+                BRASIL. Ministério da Educação.
+                <b>Base Nacional Comum Curricular</b>. Brasília, DF: MEC, 2017.
+                Disponível em: http://basenacionalcomum.mec.gov.br/. Acesso em:
+                13 set. 2024.
+              </p>
+            </div>
+          </div>
+          <img
+            style="width: 100%; margin-top: -2px"
+            src="./src/img/section-b.webp"
+            alt="divisor"
+            loading="lazy"
+            class="custom-divider"
+          />
+        </div>
+
+        <!-- COMPETENCIAS ------------------------------------>
+        <div class="pt-40">
+          <div class="container">
+            <div class="row">
+              <div class="col m1 s12"></div>
+
+              <div class="col m5 s12">
+                <img
+                  src="src/img/bncc.webp"
+                  alt="bncc"
+                  loading="lazy"
+                  style="width: 100%"
+                  class="mb-24"
+                />
+              </div>
+              <div class="col m5 s12 flex--align-center">
+                <div>
+                  <p class="white-text">
+                    A competência da BNCC que descreve os objetivos da educação
+                    tecnológica é desafiadora, pois propõe que os estudantes
+                    sejam capazes de dominar as principais funcionalidades do
+                    universo digital.
+                  </p>
+                  <p class="white-text">
+                    Esse domínio deve ser desenvolvido de maneira segura,
+                    qualificada e ética, por meio de um pensamento
+                    lógico-computacional, que permita uma reflexão crítica sobre
+                    os impactos Tecnologias Digitais da Informação e Comunicação
+                    (TDICs) na sociedade.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container--medium">
+            <p class="white-text">
+              Em outubro de 2022, o Ministério da Educação homologou o parecer
+              CNE/CEB nº 2/2022, que complementou a BNCC. Conhecido como BNCC da
+              Computação, esse parecer acrescentou à BNCC as normas sobre o
+              ensino de computação na Educação Básica. A BNCC da Computação
+              organiza as suas competências em três eixos: Pensamento
+              Computacional, Mundo Digital e Cultura Digital.
+            </p>
+          </div>
+        </div>
+
+        <!-- ESTRUTURA ------------------------------------>
+        <div id="estrutura" class="py-80">
+          <div class="container--medium">
+            <h1 data-aos="fade-up" class="center-align">ESTRUTURA DA BNCC COMPUTAÇÃO</h1>
+            <p
+              class="white-text center-align"
+              style="max-width: 600px; margin: 24px auto"
+            >
+              Conheça cada uma das três competências da BNCC da Computação
+              interagindo com o gráfico abaixo:
+            </p>
+            <div class="box-attention center-align py-16">
+              <h4>COMPUTAÇÃO</h4>
+            </div>
+
+            <div class="row">
+              <div class="col m4 s12">
+                <div class="center-align">
+                  <img
+                    src="src/img/arrow-up.png"
+                    alt="Seta para cima"
+                    loading="lazy"
+                    class="mt-40 mb-24"
+                  />
+
+                  <div class="mb-80 center-align">
+                    <a
+                      data-hystmodal="#modal-1"
+                      class="btn btn-game btn-game--gray modal-trigger flex--justify-center"
+                      style="width: 100%"
+                    >
+                      Pensamento Computacional</a
+                    >
+                  </div>
+                  <!-- Modal -->
+                  <div class="hystmodal" id="modal-1" aria-hidden="true">
+                    <div class="hystmodal__wrap">
+                      <div
+                        class="container--medium"
+                        role="dialog"
+                        aria-modal="true"
+                      >
+                        <!-- BOX MODAL -->
+                        <div class="box-attention left-align p-24">
+                          <div class="flex--align-center flex--justify-between">
+                            <p class="m-0">
+                              <b>Pensamento Computacional</b>
+                            </p>
+                            <div>
+                              <img
+                                data-hystclose
+                                class="modal-close pointer"
+                                src="src/img/close.png"
+                                alt="Close"
+                                loading="lazy"
+                              />
+                            </div>
+                          </div>
+                          <p>
+                            Refere-se à habilidade de compreender, analisar,
+                            definir, modelar, resolver, comparar e automatizar
+                            problemas e suas soluções de maneira metódica e
+                            sistemática. Isso inclui o desenvolvimento da
+                            capacidade de criar e adaptar algoritmos, aplicando
+                            fundamentos da computação para impulsionar e
+                            aprimorar a aprendizagem, além de estimular o
+                            pensamento criativo e crítico em diversas áreas do
+                            conhecimento.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Fim Modal -->
+
+                  <div>
+                    <img
+                      src="src/img/question.png"
+                      alt="Interrogação"
+                      loading="lazy"
+                      class="floatKeyf"
+                    />
+                  </div>
+
+                  <div>
+                    <img
+                      src="src/img/3-blocks.png"
+                      alt="Blocos"
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="col m4 s12">
+                <div class="center-align">
+                  <img
+                    src="src/img/arrow-up.png"
+                    alt="Seta para cima"
+                    loading="lazy"
+                    class="mt-40 mb-24"
+                  />
+
+                  <div class="mb-80 center-align">
+                    <a
+                      data-hystmodal="#modal-2"
+                      class="btn btn-game btn-game--gray modal-trigger flex--justify-center"
+                      style="width: 100%"
+                    >
+                      Mundo Digital</a
+                    >
+                  </div>
+                  <!-- Modal -->
+                  <div class="hystmodal" id="modal-2" aria-hidden="true">
+                    <div class="hystmodal__wrap">
+                      <div
+                        class="container--medium"
+                        role="dialog"
+                        aria-modal="true"
+                      >
+                        <!-- BOX MODAL -->
+                        <div class="box-attention left-align p-24">
+                          <div class="flex--align-center flex--justify-between">
+                            <p class="m-0">
+                              <b>Mundo Digital</b>
+                            </p>
+                            <div>
+                              <img
+                                data-hystclose
+                                class="modal-close pointer"
+                                src="src/img/close.png"
+                                alt="Close"
+                                loading="lazy"
+                              />
+                            </div>
+                          </div>
+                          <p>
+                            Envolve aprendizagens relacionadas a artefatos
+                            digitais, compreendendo elementos físicos
+                            (computadores, celulares, tablets) e virtuais
+                            (internet, redes sociais e nuvens de dados).
+                            Entender o mundo digital requer conhecimento sobre o
+                            poder da informação e a importância de armazená-la e
+                            protegê-la, incluindo a compreensão dos códigos
+                            utilizados para sua representação em diferentes
+                            tipologias informacionais, assim como as formas de
+                            processamento, transmissão e distribuição de maneira
+                            segura e confiável.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Fim Modal -->
+
+                  <div>
+                    <img
+                      src="src/img/question.png"
+                      alt="Interrogação"
+                      loading="lazy"
+                      class="floatKeyf"
+                    />
+                  </div>
+
+                  <div>
+                    <img
+                      src="src/img/3-blocks.png"
+                      alt="Blocos"
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="col m4 s12">
+                <div class="center-align">
+                  <img
+                    src="src/img/arrow-up.png"
+                    alt="Seta para cima"
+                    loading="lazy"
+                    class="mt-40 mb-24"
+                  />
+
+                  <div class="mb-80 center-align">
+                    <a
+                      data-hystmodal="#modal-3"
+                      class="btn btn-game btn-game--gray modal-trigger flex--justify-center"
+                      style="width: 100%"
+                    >
+                      Cultura Digital</a
+                    >
+                  </div>
+                  <!-- Modal -->
+                  <div class="hystmodal" id="modal-3" aria-hidden="true">
+                    <div class="hystmodal__wrap">
+                      <div
+                        class="container--medium"
+                        role="dialog"
+                        aria-modal="true"
+                      >
+                        <!-- BOX MODAL -->
+                        <div class="box-attention left-align p-24">
+                          <div class="flex--align-center flex--justify-between">
+                            <p class="m-0">
+                              <b>Cultura Digital</b>
+                            </p>
+                            <div>
+                              <img
+                                data-hystclose
+                                class="modal-close pointer"
+                                src="src/img/close.png"
+                                alt="Close"
+                                loading="lazy"
+                              />
+                            </div>
+                          </div>
+                          <p>
+                            Abrange aprendizagens voltadas à participação
+                            consciente e democrática por meio das tecnologias
+                            digitais. Isso pressupõe a compreensão dos impactos
+                            da revolução digital e seus avanços na sociedade
+                            contemporânea, bem como o desenvolvimento de uma
+                            atitude crítica, ética e responsável em relação à
+                            multiplicidade de ofertas midiáticas e digitais.
+                            Também envolve o uso fluente da tecnologia digital
+                            para propor soluções e manifestações culturais
+                            contextualizadas e críticas.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Fim Modal -->
+
+                  <div>
+                    <img
+                      src="src/img/question.png"
+                      alt="Interrogação"
+                      loading="lazy"
+                      class="floatKeyf"
+                    />
+                  </div>
+
+                  <div>
+                    <img
+                      src="src/img/3-blocks.png"
+                      alt="Blocos"
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- LINHA TEMPO ------------------------------------>
+        <div id="linhaTempo" class="py-80">
+          <div class="container--medium">
+            <h1 data-aos="fade-up" class="center-align mb-40">
+              LINHA DO TEMPO
+            </h1>
+            <content-menu-01></content-menu-01>
+          </div>
+        </div>
+
+        <!-- ANEXO ------------------------------------>
+        <div class="py-80 pt-0-mobile pb-40-mobile">
+          <div class="container">
+            <div class="row">
+              <div class="col m1 s12"></div>
+              <div class="col m5 s12 flex--align-center">
+                <div>
+                  <p class="white-text">
+                    O anexo de Computação da BNCC não representa um novo
+                    componente curricular. As habilidades nele descritas devem
+                    ser contextualizadas e integradas de forma individualizada e
+                    transversal às diversas áreas do conhecimento em cada nível
+                    de ensino.
+                  </p>
+                </div>
+              </div>
+
+              <div class="col m5 s12">
+                <img
+                  src="src/img/computacao.webp"
+                  alt="Menina com lego motorizado"
+                  loading="lazy"
+                  style="width: 100%"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PRÉ JOGO ------------------------------------>
+        <div
+          id="pre-game"
+          class="center-align flex--justify-center stop-navbar"
+        >
+          <div>
+            <div class="container">
+              <div style="max-width: 600px; margin: auto">
+                <p class="white-text my-40">
+                  Agora que aprendeu um pouco mais sobre educação tecnológica,
+                  temos uma missão especial para você.
+                </p>
+                <div
+                  class="mb-40 box-attention box-attention--image left-align"
+                >
+                  <div data-aos="fade-right" class="box-icon mr-24">
+                    <img src="src/img/medal.gif" alt="Medalha" loading="lazy" />
+                  </div>
+                  <h5>
+                    Comece o jogo, enfrente os desafios e recupere a medalha do
+                    Super ATE!
+                  </h5>
+                </div>
+                <img
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  src="src/img/Up.png"
+                  alt="Up"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <img
+              class="game-divisor mt-24"
+              src="src/img/blocks-base-02.webp"
+              alt="Game Pixel Art"
+              style="margin-bottom: -5px"
+            />
+          </div>
+        </div>
+
+        <div class="pt-60" style="background-color: #e46973">
+          <game-fase></game-fase>
+          <!-- Footer ---------------------------------- -->
+          <app-footer></app-footer>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
