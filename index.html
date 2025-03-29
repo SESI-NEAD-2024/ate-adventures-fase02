@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta
       name="description"
       content="A educação tecnológica na Educação Básica"
@@ -11,10 +11,8 @@
     <meta name="author" content="SESI EAD" />
     <title>FASE 2 | ATE Adventures</title>
     <link rel="icon" type="image/png" href="src/img/core/Favicon.webp" />
-
     <!-- Font -->
     <link rel="stylesheet" href="https://use.typekit.net/hgj6bzh.css" />
-
     <!-- CSS -->
     <link
       type="text/css"
@@ -22,48 +20,36 @@
       href="src/css/main.css"
       media="screen"
     />
-
     <!-- Vue DEV MODE -->
     <!-- <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> -->
-
     <!-- Vue PROD MODE -->
     <script
       rel="preconnect"
       src="https://unpkg.com/vue@3/dist/vue.global.prod.js"
     ></script>
-
     <!-- Vue Router -->
     <!-- <script src="https://unpkg.com/vue-router@4.2.0/dist/vue-router.global.js"></script> -->
-
     <!-- Scorm JS -->
-    <script src="src/js/scorm/APIWrapper.js" ></script>
-    <script src="src/js/scorm/SCOFunctions.js" ></script>
-    <script src="src/js/scorm/scorm-app.js" ></script>
-
+    <!--<script src="src/js/scorm/APIWrapper.js"></script><script src="src/js/scorm/SCOFunctions.js"></script><script src="src/js/scorm/scorm-app.js"></script>-->
     <!-- Materialize JS -->
     <script
       type="text/javascript"
       src="src/js/materialize/materialize.js"
-      defer
+      defer="defer"
     ></script>
-
     <!-- AOS JS -->
     <script
       type="text/javascript"
       src="src/js/aos-master/aos.js"
-      defer
+      defer="defer"
     ></script>
-
     <!-- HystModal Modal JS-->
     <link rel="stylesheet" href="src/css/hystmodal.min.css" />
     <script src="src/js/hystmodal/hystmodal.min.js"></script>
-
     <!-- YouTube IFrame Player API -->
     <script src="https://www.youtube.com/iframe_api"></script>
-
     <!--**************** App.js JS customizado aqui ****************-->
     <script type="module" src="src/js/app.js"></script>
-
     <!-- AOS Animation CSS-->
     <link type="text/css" rel="stylesheet" href="src/css/aos.css" />
     <!-- HystModal Modal CSS-->
@@ -72,16 +58,12 @@
   <body>
     <div id="app">
       <!-- loading ---------------------------------- -->
-      <div id="loading">
-        <div class="spinner"></div>
-      </div>
+      <div id="loading"><div class="spinner"></div></div>
       <div id="content">
-        <!-- Navbar ---------------------------------- -->
-        <navbar></navbar>
-
-        <!-- Hero Banner ---------------------------------- -->
-        <hero>
-          <div>
+        <!-- Navbar ---------------------------------- --><navbar
+        ></navbar
+        ><!-- Hero Banner ---------------------------------- --><hero
+          ><div>
             <h2>FASE 2</h2>
             <br />
             <div
@@ -92,7 +74,6 @@
                 >A educação tecnológica na Educação Básica</span
               >
             </div>
-            
           </div>
           <div class="container--medium">
             <div class="box-attention box-attention--image my-80">
@@ -109,15 +90,10 @@
             </div>
           </div>
           ​</hero
-        >
-
-        <!-- EDUCACAO ---------------------------------- -->
+        ><!-- EDUCACAO ---------------------------------- -->
         <div id="educacao" class="pb-80">
-          
-
           <div class="container mt-80">
             <carousel></carousel>
-
             <div class="row mt-80">
               <div class="col m4 s12 center-align">
                 <img
@@ -154,9 +130,7 @@
             </div>
           </div>
         </div>
-
         <!-- FRASE ------------------------------------>
-
         <div id="frase">
           <img
             style="width: 100%"
@@ -199,13 +173,11 @@
             class="custom-divider"
           />
         </div>
-
         <!-- COMPETENCIAS ------------------------------------>
         <div class="pt-40">
           <div class="container">
             <div class="row">
               <div class="col m1 s12"></div>
-
               <div class="col m5 s12">
                 <img
                   src="src/img/bncc.webp"
@@ -245,11 +217,12 @@
             </p>
           </div>
         </div>
-
         <!-- ESTRUTURA ------------------------------------>
         <div id="estrutura" class="py-80">
           <div class="container--medium">
-            <h1 data-aos="fade-up" class="center-align">ESTRUTURA DA BNCC COMPUTAÇÃO</h1>
+            <h1 data-aos="fade-up" class="center-align">
+              ESTRUTURA DA BNCC COMPUTAÇÃO
+            </h1>
             <p
               class="white-text center-align"
               style="max-width: 600px; margin: 24px auto"
@@ -260,7 +233,6 @@
             <div class="box-attention center-align py-16">
               <h4>COMPUTAÇÃO</h4>
             </div>
-
             <div class="row">
               <div class="col m4 s12">
                 <div class="center-align">
@@ -270,14 +242,12 @@
                     loading="lazy"
                     class="mt-40 mb-24"
                   />
-
                   <div class="mb-80 center-align">
                     <a
                       data-hystmodal="#modal-1"
                       class="btn btn-game btn-game--gray modal-trigger flex--justify-center"
                       style="width: 100%"
-                    >
-                      Pensamento Computacional</a
+                      >Pensamento Computacional</a
                     >
                   </div>
                   <!-- Modal -->
@@ -291,9 +261,7 @@
                         <!-- BOX MODAL -->
                         <div class="box-attention left-align p-24">
                           <div class="flex--align-center flex--justify-between">
-                            <p class="m-0">
-                              <b>Pensamento Computacional</b>
-                            </p>
+                            <p class="m-0"><b>Pensamento Computacional</b></p>
                             <div>
                               <img
                                 data-hystclose
@@ -319,9 +287,7 @@
                       </div>
                     </div>
                   </div>
-
                   <!-- Fim Modal -->
-
                   <div>
                     <img
                       src="src/img/question.png"
@@ -330,7 +296,6 @@
                       class="floatKeyf"
                     />
                   </div>
-
                   <div>
                     <img
                       src="src/img/3-blocks.png"
@@ -340,7 +305,6 @@
                   </div>
                 </div>
               </div>
-
               <div class="col m4 s12">
                 <div class="center-align">
                   <img
@@ -349,14 +313,12 @@
                     loading="lazy"
                     class="mt-40 mb-24"
                   />
-
                   <div class="mb-80 center-align">
                     <a
                       data-hystmodal="#modal-2"
                       class="btn btn-game btn-game--gray modal-trigger flex--justify-center"
                       style="width: 100%"
-                    >
-                      Mundo Digital</a
+                      >Mundo Digital</a
                     >
                   </div>
                   <!-- Modal -->
@@ -370,9 +332,7 @@
                         <!-- BOX MODAL -->
                         <div class="box-attention left-align p-24">
                           <div class="flex--align-center flex--justify-between">
-                            <p class="m-0">
-                              <b>Mundo Digital</b>
-                            </p>
+                            <p class="m-0"><b>Mundo Digital</b></p>
                             <div>
                               <img
                                 data-hystclose
@@ -400,9 +360,7 @@
                       </div>
                     </div>
                   </div>
-
                   <!-- Fim Modal -->
-
                   <div>
                     <img
                       src="src/img/question.png"
@@ -411,7 +369,6 @@
                       class="floatKeyf"
                     />
                   </div>
-
                   <div>
                     <img
                       src="src/img/3-blocks.png"
@@ -421,7 +378,6 @@
                   </div>
                 </div>
               </div>
-
               <div class="col m4 s12">
                 <div class="center-align">
                   <img
@@ -430,14 +386,12 @@
                     loading="lazy"
                     class="mt-40 mb-24"
                   />
-
                   <div class="mb-80 center-align">
                     <a
                       data-hystmodal="#modal-3"
                       class="btn btn-game btn-game--gray modal-trigger flex--justify-center"
                       style="width: 100%"
-                    >
-                      Cultura Digital</a
+                      >Cultura Digital</a
                     >
                   </div>
                   <!-- Modal -->
@@ -451,9 +405,7 @@
                         <!-- BOX MODAL -->
                         <div class="box-attention left-align p-24">
                           <div class="flex--align-center flex--justify-between">
-                            <p class="m-0">
-                              <b>Cultura Digital</b>
-                            </p>
+                            <p class="m-0"><b>Cultura Digital</b></p>
                             <div>
                               <img
                                 data-hystclose
@@ -480,9 +432,7 @@
                       </div>
                     </div>
                   </div>
-
                   <!-- Fim Modal -->
-
                   <div>
                     <img
                       src="src/img/question.png"
@@ -491,7 +441,6 @@
                       class="floatKeyf"
                     />
                   </div>
-
                   <div>
                     <img
                       src="src/img/3-blocks.png"
@@ -504,7 +453,6 @@
             </div>
           </div>
         </div>
-
         <!-- LINHA TEMPO ------------------------------------>
         <div id="linhaTempo" class="py-80">
           <div class="container--medium">
@@ -514,7 +462,6 @@
             <content-menu-01></content-menu-01>
           </div>
         </div>
-
         <!-- ANEXO ------------------------------------>
         <div class="py-80 pt-0-mobile pb-40-mobile">
           <div class="container">
@@ -531,7 +478,6 @@
                   </p>
                 </div>
               </div>
-
               <div class="col m5 s12">
                 <img
                   src="src/img/computacao.webp"
@@ -543,7 +489,6 @@
             </div>
           </div>
         </div>
-
         <!-- PRÉ JOGO ------------------------------------>
         <div
           id="pre-game"
@@ -584,11 +529,10 @@
             />
           </div>
         </div>
-
         <div class="pt-60" style="background-color: #e46973">
-          <game-fase></game-fase>
-          <!-- Footer ---------------------------------- -->
-          <app-footer></app-footer>
+          <game-fase></game-fase
+          ><!-- Footer ---------------------------------- --><app-footer
+          ></app-footer>
         </div>
       </div>
     </div>

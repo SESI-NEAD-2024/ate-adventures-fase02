@@ -1,9 +1,6 @@
 # Desconsiderar dist
 dist
 
-# Desconsiderar src/GDevelop
-# src/GDevelop
-
 # Desconsiderar dependências
 node_modules
 
